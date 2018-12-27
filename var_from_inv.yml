@@ -1,0 +1,5 @@
+---
+ - hosts: a
+   tasks:
+    - name: runnung date
+      command: "{{ x }}"

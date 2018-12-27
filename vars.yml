@@ -1,0 +1,4 @@
+---
+ - x: telnet # for yum
+ - y: bhanu # for make dir
+ - z: harry # useradd

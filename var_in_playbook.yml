@@ -1,0 +1,10 @@
+---
+ - hosts: a
+   vars: 
+    - x: date
+    - y: cal
+    - p: present
+    - z: yum
+   tasks:
+    - name: running {{ z }}
+      yum: name=telnet state={{ p }}

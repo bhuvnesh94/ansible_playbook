@@ -1,0 +1,5 @@
+---
+ - hosts: localhost
+   tasks:
+    - copy: content="{{ ansible_hostname }}" dest=/var/www/html/new.html
+  

@@ -1,0 +1,20 @@
+---
+ - hosts: a
+   vars_files: 
+    - vars.yml
+   tasks:
+    - name: installing "{{ x }}" 
+      yum:
+       name: "{{ x }}"
+       state: absent
+
+    - name: making directory "{{ y }}"
+      file:
+       path: /root/Desktop/{{ y }}
+       state: absent
+
+    - name: adding user "{{ z }}"
+      user:
+       name: "{{ z }}" 
+       state: absent
+       remove: yes

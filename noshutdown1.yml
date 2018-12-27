@@ -1,0 +1,5 @@
+---
+ - hosts: localhost
+   tasks:
+    - name: starting webservices
+      service: name=httpd state=started enabled=yes
